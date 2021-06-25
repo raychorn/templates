@@ -11,7 +11,7 @@ then
     exit
 fi
 
-CNAME=nginx
+CNAME="nginxnginx-portainer-templates
 
 ARRAY=()
 

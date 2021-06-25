@@ -1,6 +1,6 @@
 #!/bin/bash
 
-container="nginx" 
+container="nginx-portainer-templates" 
 
 if ! [ -d ./home ]
 then

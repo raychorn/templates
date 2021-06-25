@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+    webtop:
+        image: nginx:stable-alpine
+        volumes:
+            - ./templates.json:/usr/share/nginx/html/templates.json
+        ports:
+            - 8888:80
+        resources:
+            limits:
+              cpus: 0.50
+              memory: 512M
+            reservations:
+              cpus: 0.25
+              memory: 128M
+        restart: unless-stopped
